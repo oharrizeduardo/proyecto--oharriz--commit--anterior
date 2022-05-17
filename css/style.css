@@ -1,0 +1,957 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+
+/* font-family: 'Ovo', serif;*/
+
+
+/* SeCCION INDEX */
+
+
+
+h1 {
+
+    font-family: 'Ovo', serif;
+    text-align: left;
+    background-color: #eceaf4;
+    color: transparent;
+    display: inline-block;
+
+
+}
+
+
+.fotoInicio {
+
+
+    padding-top: 20px;
+    padding-left: 45px;
+    background-color: #eceaf4;
+
+
+
+}
+
+.headerIndex {
+
+    background-color: #eceaf4;
+    grid-area: headerIndex;
+}
+
+
+
+#fotoLogo {
+
+    max-width: 95%;
+    max-height: 95%;
+    height: 90px;
+
+
+}
+
+
+
+.menuNavegacion {
+
+    background-color: #562764;
+    font-family: 'Ovo', serif;
+    grid-area: menuNavegacion;
+
+
+}
+
+.menuNavegacion ul {
+
+    text-decoration: none;
+    text-align: center;
+
+
+
+}
+
+.menuNavegacion ul li {
+    display: inline-block;
+
+}
+
+.menuNavegacion ul li a {
+
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+
+}
+
+.menuNavegacion ul li a:hover {
+    background-color: blue;
+}
+
+
+.primeraSeccion {
+
+    /* background-image: url("../img/landing--page--foto.jpg");
+    width: 100%;
+    height: 700px; */
+    background-size: cover;
+    background-repeat: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column;
+
+
+
+
+}
+
+.cajaVideo {
+
+
+    width: 100%;
+    margin-top: 90px;
+    padding: 20px;
+
+
+
+}
+
+.videoLanding {
+
+
+    width: 100%;
+    border: 9px black;
+    margin: auto;
+    border-radius: 20px;
+
+
+}
+
+
+
+#conoceMas {
+
+
+    border-style: none;
+    border-radius: 15px;
+    font-family: 'Ovo', serif;
+    background-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 5px;
+
+
+}
+
+.fraseFoto {
+
+    text-align: center;
+    font-family: 'Ovo', serif;
+    font-size: 20px;
+    padding: 10px;
+
+
+}
+
+
+
+.foto {
+
+    width: 300px;
+    height: auto;
+
+
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDBAD7;
+    grid-area: footerIndex;
+    height: 200px;
+}
+
+
+/* CAMBIO DE SECCIONES*/
+
+h2 {
+    font-family: 'Ovo', serif;
+
+}
+
+
+
+main {
+    background-color: #bfb8da;
+
+}
+
+
+.flexFotos {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SECCION CONTACTO */
+
+
+.mapas {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-flow: column nowrap;
+    grid-area: mapas;
+    background-color: #bfb8da;
+    padding-top: 20px;
+
+
+
+}
+
+.dibujoMapa {
+
+    border-radius: 40px;
+}
+
+
+
+.formularioDeContacto {
+
+    width: 540px;
+    height: 540px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    box-sizing: border-box;
+    font-family: 'Ovo', serif;
+    position: relative;
+    margin: auto;
+
+
+
+
+}
+
+#tituloContacto {
+
+
+    padding-bottom: 30px;
+    width: 180px;
+    color: #5a5a6e;
+    border-bottom: solid 2px #bebed2;
+    padding-top: 30px;
+    padding-left: 20px;
+
+
+
+
+
+}
+
+input {
+
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Ovo', serif;
+    transition: all .3s;
+    border-bottom: solid 2px #bebed2;
+    text-align: left;
+    margin-bottom: 5px;
+
+
+}
+
+#botonEnviar {
+
+    color: #fff;
+    border: solid 2px #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 30%;
+    float: right;
+    margin-right: 20px;
+    display: block;
+    text-align: center;
+
+
+
+}
+
+#botonEnviar:hover {
+
+    background: #78788c;
+
+
+}
+
+#textoComentario {
+
+    background: 0;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.posicionformulario {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-area: posicionFormulario;
+
+
+}
+
+h3 {
+    color: #fff;
+    text-decoration: underline;
+
+}
+
+
+
+
+/* SECCION TRATAMIENTOS */
+
+
+.listaTratamientos {
+
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+
+.listaTratamientosFacial {
+
+
+    background-image: url(../img/foto--facial--tratamientos.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    box-shadow: 20px 17px 22px 12px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.listaTratamientosFacial p {
+
+    text-align: center;
+    font-size: 2rem;
+    list-style: none;
+    color: transparent;
+}
+
+
+
+
+.listaTratamientosFacial ul {
+
+    font-size: 2rem;
+    list-style: none;
+    color: transparent;
+}
+
+
+.listaTratamientosCorporal {
+
+
+    background-image: url(../img/foto--corporal--tratamientos.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 20px 17px 22px 12px rgba(0, 0, 0, 0.75)
+}
+
+
+
+
+
+
+.listaTratamientosCorporal ul {
+    position: absolute;
+    font-size: 2rem;
+    inset: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style: none;
+    color: black;
+}
+
+
+
+
+
+.fotoFacial {
+
+    width: 100%;
+
+
+}
+
+
+
+
+.listaTratamientosFacial:hover {
+
+
+    filter: blur(8px);
+
+}
+
+.listaTratamientosFacial ul:hover {
+
+
+    color: white;
+    font-size: 2rem;
+}
+
+.listaTratamientosFacial p:hover {
+    color: white;
+
+}
+
+.fotoCorporal {
+
+    width: 100%;
+
+
+}
+
+.listaTratamientosCorporal:hover {
+    filter: blur(8px);
+    opacity: 0.9;
+
+}
+
+
+
+/* SECCION SOBRE MI */
+
+
+
+.seccionSobreMi {
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+
+
+
+}
+
+.seccionSobreMi p {
+
+    text-align: justify;
+    padding-left: 5px;
+
+
+
+
+
+}
+
+.fotoSobreMi {
+
+    height: auto;
+    width: 500px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.textoSobreMi {
+
+    text-align: left;
+
+
+}
+
+.botoneraRedesSociales {
+
+
+    background-color: #eceaf4;
+    grid-area: botoneraRedesSociales;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.icono {
+
+    display: flex;
+    height: 45px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.segundaSeccionSobreMi {
+
+    display: flex;
+    background-color: #bfb8da;
+
+}
+
+.segundaSeccionSobreMi p {
+
+    text-align: left;
+    padding-top: 20px;
+
+}
+
+.fotoSobreMi2 {
+
+    height: auto;
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+/* SECCION REDES SOCIALES */
+
+
+.mainRedesSociales {
+
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    grid-area: mainRedesSociales;
+}
+
+
+
+
+/* APLICO GRID AL INDEX */
+
+.gridPadre {
+
+    display: grid;
+    grid-template-areas:
+        "headerIndex headerIndex headerIndex"
+        "botoneraRedesSociales botoneraRedesSociales botoneraRedesSociales"
+        "menuNavegacion menuNavegacion menuNavegacion"
+        "mainIndex mainIndex mainIndex"
+        "footerIndex footerIndex footerIndex";
+
+
+}
+
+.mainIndex {
+
+    grid-area: mainIndex;
+}
+
+
+.gridContacto {
+
+    display: grid;
+    grid-template-areas:
+        "posicionFormulario mapas mapas"
+        ". mapas mapas";
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .menuNavegacion {
+        display: none;
+
+    }
+
+    .primeraSeccion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaVideo {
+
+
+        width: 100%;
+        margin-top: 90px;
+        padding: 5px;
+
+
+    }
+
+
+
+    .gridPadre {
+
+        display: grid;
+        grid-template-areas:
+            "headerIndex headerIndex headerIndex"
+            "mainIndex mainIndex mainIndex"
+            "botoneraRedesSociales botoneraRedesSociales botoneraRedesSociales"
+            "footerIndex footerIndex footerIndex";
+
+
+    }
+
+
+    .botoneraRedesSociales {
+
+        background-color: #bfb8da;
+        justify-content: center;
+        padding: 30px;
+    }
+
+
+
+
+}
+
+
+/* GRID Y RESPONSIVE SOLAPA TRATAMIENTOS*/
+
+
+
+
+.gridTratamientos {
+
+    display: grid;
+    grid-template-areas:
+        "headerTratamientos headerTratamientos headerTratamientos"
+        "botoneraRedesSociales botoneraRedesSociales botoneraRedesSociales"
+        "menuNavegacion menuNavegacion menuNavegacion"
+        "mainTratamientos mainTratamientos mainTratamientos"
+        "footerIndex footerIndex footerIndex";
+}
+
+
+.headerTratamientos {
+
+    grid-area: headerTratamientos;
+}
+
+.mainTratamientos {
+    grid-area: mainTratamientos;
+    padding-bottom: 45px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .gridTratamientos {
+
+        display: grid;
+        grid-template-areas:
+            "headerTratamientos headerTratamientos headerTratamientos"
+            "mainTratamientos mainTratamientos mainTratamientos"
+            "botoneraRedesSociales botoneraRedesSociales botoneraRedesSociales"
+            "footerIndex footerIndex footerIndex";
+
+
+    }
+
+    .listaTratamientosCorporal {
+
+        position: relative;
+        width: 299px;
+        height: 299px;
+        overflow: hidden;
+
+    }
+
+    .listaTratamientosFacial {
+        margin-bottom: 10px;
+        position: relative;
+        width: 299px;
+        height: 299px;
+        overflow: hidden;
+
+    }
+
+
+
+
+
+}
+
+
+
+/* GRID Y RESPONSIVE SOLAPA CONTACTO*/
+
+.gridContacto {
+    display: grid;
+    grid-template-areas:
+        "headerContacto headerContacto"
+        "botoneraRedesSociales botoneraRedesSociales"
+        "menuNavegacion menuNavegacion"
+        "posicionFormulario mapas"
+        "fotoContacto mapas"
+        "footerIndex footerIndex";
+}
+
+.headerContacto {
+    grid-area: headerContacto;
+}
+
+.posicionFormulario {
+    grid-area: posicionFormulario;
+}
+
+.fotoContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: fotoContacto;
+    background-color: #bfb8da;
+}
+
+
+@media screen and (max-width: 1050px) {
+
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+            "headerContacto headerContacto"
+            "botoneraRedesSociales botoneraRedesSociales"
+            "menuNavegacion menuNavegacion"
+            "posicionFormulario posicionFormulario "
+            "mapas mapas"
+            "fotoContacto fotoContacto"
+            "footerIndex footerIndex";
+
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+            "headerContacto headerContacto"
+            "menuNavegacion menuNavegacion"
+            "posicionFormulario posicionFormulario "
+            "mapas mapas"
+            "botoneraRedesSociales botoneraRedesSociales"
+            "footerIndex footerIndex";
+
+
+    }
+
+    .fotoContacto {
+        display: none;
+
+    }
+
+
+
+    .formularioDeContacto {
+
+        width: 299px;
+    }
+
+
+
+    .dibujoMapa {
+
+        width: 299px;
+    }
+}
+
+
+/* APLICAMOS GRID Y FULL RESPONSIVE A SOBRE MI */
+
+.gridSobreMi {
+
+    display: grid;
+    grid-template-areas:
+        "headerSobreMi headerSobreMi"
+        "botoneraRedesSociales botoneraRedesSociales"
+        "menuNavegacion menuNavegacion"
+        "mainSobreMi mainSobreMi"
+        "segundaSeccionSobreMi segundaSeccionSobreMi"
+        "footerSobreMi footerSobreMi";
+
+}
+
+
+.headerSobreMi {
+    grid-area: headerSobreMi;
+
+}
+
+.mainSobreMi {
+
+    grid-area: mainSobreMi;
+
+}
+
+.footerSobreMi {
+
+    grid-area: footerSobreMi;
+}
+
+.segundaSeccionSobreMi {
+    grid-area: segundaSeccionSobreMi;
+}
+
+
+.footerSobreMi {
+    grid-area: footerSobreMi;
+}
+
+
+@media screen and (max-width:500px) {
+
+    .gridSobreMi {
+
+        display: grid;
+        grid-template-areas:
+            "headerSobreMi headerSobreMi"
+            "mainSobreMi mainSobreMi"
+            "segundaSeccionSobreMi segundaSeccionSobreMi"
+            "botoneraRedesSociales botoneraRedesSociales"
+            "footerSobreMi footerSobreMi";
+
+
+
+    }
+
+    .seccionSobreMi {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+
+    .segundaSeccionSobreMi {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+        padding-top: 20px;
+
+
+    }
+
+    .botoneraRedesSociales {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .fotoSobreMi {
+
+        width: 350px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .fotoSobreMi2 {
+
+        width: 350px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .textoSobreMi {
+
+        width: 95%;
+    }
+
+}
+
+
+
+/* APLICO GRID Y HAGO RESPONSIVE REDES SOCIALES */
+
+
+
+
+
+.gridRedesSociales {
+
+ display: grid;
+ grid-template-areas: 
+"headerRedesSociales headerRedesSociales"
+"botoneraRedesSociales botoneraRedesSociales"
+"menuNavegacion menuNavegacion"
+"mainRedesSociales mainRedesSociales"
+"footerRedesSociales footerRedesSociales";
+
+}
+
+
+.headerRedesSociales {
+    grid-area: headerRedesSociales;
+}
+
+.footerRedesSociales {
+
+    grid-area: footerRedesSociales;
+
+}
+
+
+@media screen and (max-width:500px) {
+
+
+
+.gridRedesSociales {
+
+grid-template-areas: 
+"headerRedesSociales headerRedesSociales"
+"mainRedesSociales mainRedesSociales"
+"botoneraRedesSociales botoneraRedesSociales"
+"footerRedesSociales footerRedesSociales";
+
+}
+
+
+.mainRedesSociales {
+
+
+    font-size: 3rem;
+   
+}
+
+}
