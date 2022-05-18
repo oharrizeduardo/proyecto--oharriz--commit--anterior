@@ -42,7 +42,7 @@ h1 {
 .headerIndex {
 
     background-color: #eceaf4;
-    grid-area: headerIndex;
+    /* grid-area: headerIndex; */
 }
 
 
@@ -62,38 +62,44 @@ h1 {
 
     background-color: #562764;
     font-family: 'Ovo', serif;
-    grid-area: menuNavegacion;
+    /* grid-area: menuNavegacion; */
+    text-align: right;
+    
 
 
 }
 
-.menuNavegacion ul {
-
-    text-decoration: none;
-    text-align: center;
-
-
-
-}
-
-.menuNavegacion ul li {
-    display: inline-block;
-
-}
-
-.menuNavegacion ul li a {
-
-    text-decoration: none;
+ul li a {
     color: white;
-    padding: 15px;
-    display: block;
+}
+
+.colorNav {
+
+    color:white;
+    background-color: #562764;
+    height: 100%;
+    
 
 }
+
+.colorFondoDropdown {
+    background-color:#562764;
+    color: white;
+}
+
+
 
 .menuNavegacion ul li a:hover {
     background-color: blue;
+    
 }
 
+
+.cajaMenuNav {
+
+    margin: 0;
+    background-color: #78788c;
+}
 
 .primeraSeccion {
 
@@ -177,7 +183,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #CDBAD7;
-    grid-area: footerIndex;
+    /* grid-area: footerIndex; */
     height: 200px;
 }
 
@@ -215,7 +221,7 @@ main {
     align-items: center;
     text-align: center;
     flex-flow: column nowrap;
-    grid-area: mapas;
+    /* grid-area: mapas; */
     background-color: #bfb8da;
     padding-top: 20px;
 
@@ -233,14 +239,16 @@ main {
 .formularioDeContacto {
 
     width: 540px;
-    height: 540px;
+    height: 640px;
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
     box-sizing: border-box;
     font-family: 'Ovo', serif;
-    position: relative;
-    margin: auto;
+    /* position: relative;*/
+    margin: auto; 
+
+    
 
 
 
@@ -317,10 +325,16 @@ input {
 
     padding-top: 40px;
     padding-bottom: 40px;
-    grid-area: posicionFormulario;
+        /* grid-area: posicionFormulario; */
+ 
+    
 
 
 }
+
+
+
+
 
 h3 {
     color: #fff;
@@ -460,7 +474,7 @@ h3 {
 
 
 
-.seccionSobreMi {
+/* .seccionSobreMi {
 
     display: flex;
     justify-content: space-around;
@@ -468,9 +482,9 @@ h3 {
 
 
 
-}
+} */
 
-.seccionSobreMi p {
+/* .seccionSobreMi p {
 
     text-align: justify;
     padding-left: 5px;
@@ -479,7 +493,7 @@ h3 {
 
 
 
-}
+} */
 
 .fotoSobreMi {
 
@@ -488,6 +502,18 @@ h3 {
     border-radius: 20px;
     margin-right: 20px;
     margin-left: 20px;
+    
+
+}
+
+.fotoSobreMi2 {
+
+    height: auto;
+    width: 500px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
 
 }
 
@@ -502,12 +528,114 @@ h3 {
 
 
     background-color: #eceaf4;
-    grid-area: botoneraRedesSociales;
+    /* grid-area: botoneraRedesSociales; */
     height: auto;
     display: flex;
     justify-content: flex-end;
 
 }
+
+:root {
+
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077b5;
+    --whatsapp: #00bb2b;
+    --tiktok: black;
+
+}
+
+.redesContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-items: center;
+    background-color: #eceaf4;
+    
+
+
+
+
+}
+
+.redesContainer ul {
+
+    display: flex;
+    align-items:flex-end;
+    justify-items: flex-end;
+    background-color: #eceaf4;
+    list-style: none;
+
+
+}
+
+
+.redesContainer ul li {
+
+
+margin: 0 5px;
+width: 50px;
+height: 50px;
+text-align: center;
+
+}
+
+.redesContainer ul li a {
+
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: .2s;
+}
+
+.redesContainer ul:hover a {
+
+    filter: blur(2px);
+}
+
+.redesContainer ul li a:hover {
+
+    transform: translateY(-6px) ;
+    transform: scale(1.05) ;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    
+} 
+
+
+.redesContainer ul li .instagram:hover {
+    background: var(--instagram);
+    filter: none;
+    
+
+}
+
+.redesContainer ul li .whatsapp:hover {
+    background: var(--whatsapp);
+    filter: none;
+    
+
+}
+
+.redesContainer ul li .tiktok:hover {
+    background: var(--tiktok);
+    filter: none;
+  
+
+}
+
+.redesContainer ul li .linkedin:hover {
+    background: var(--linkedin);
+    filter: none;
+  
+
+}
+
+
 
 .icono {
 
@@ -517,30 +645,39 @@ h3 {
     justify-content: flex-end;
 }
 
+
+/* LE SACO FLEX POR EL BOOTSTRAP */
+
 .segundaSeccionSobreMi {
 
-    display: flex;
+    /* display: flex; */
     background-color: #bfb8da;
 
 }
 
-.segundaSeccionSobreMi p {
+/* .segundaSeccionSobreMi p {
 
     text-align: left;
     padding-top: 20px;
 
-}
+} */
+
+
+@media screen and (max-width:800px) {
+
+
 
 .fotoSobreMi2 {
 
     height: auto;
-    width: 500px;
+    width: 800px;
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
 
 }
 
+}
 
 /* SECCION REDES SOCIALES */
 
@@ -551,7 +688,7 @@ h3 {
     font-size: 6rem;
     padding-top: 300px;
     padding-bottom: 300px;
-    grid-area: mainRedesSociales;
+    /* grid-area: mainRedesSociales; */
 }
 
 
@@ -559,7 +696,7 @@ h3 {
 
 /* APLICO GRID AL INDEX */
 
-.gridPadre {
+/* .gridPadre {
 
     display: grid;
     grid-template-areas:
@@ -641,13 +778,80 @@ h3 {
 
 }
 
+*/
+
+
+/* ESTO ES MEDIA-QUERY PARA BOOTSTRAP PORQUE SE ME ROMPIO SIN GRID*/
+
+@media screen and (max-width: 500px) {
+
+    .redesContainer {
+        padding-top: 15px;
+    }
+
+    .footerIndex {
+
+        text-align: center;
+    }
+
+    .footerContacto {
+
+        text-align: center;
+    }
+
+    .dibujoMapa {
+
+        max-width: 95%;
+        
+    }
+
+    .fotoSobreMi {
+
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+
+    .forformularioDeContacto {
+
+        max-width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .fotoSobreMi {
+
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+
+}
+
+
+
+    
+ 
+
+
 
 /* GRID Y RESPONSIVE SOLAPA TRATAMIENTOS*/
 
 
 
 
-.gridTratamientos {
+/* .gridTratamientos {
 
     display: grid;
     grid-template-areas:
@@ -669,10 +873,11 @@ h3 {
     padding-bottom: 45px;
 }
 
+*/
 
 @media screen and (max-width: 500px) {
 
-    .gridTratamientos {
+    /* .gridTratamientos {
 
         display: grid;
         grid-template-areas:
@@ -682,7 +887,7 @@ h3 {
             "footerIndex footerIndex footerIndex";
 
 
-    }
+    } */
 
     .listaTratamientosCorporal {
 
@@ -690,6 +895,8 @@ h3 {
         width: 299px;
         height: 299px;
         overflow: hidden;
+        padding-bottom: 25px;
+        padding-top: 25px;
 
     }
 
@@ -699,6 +906,7 @@ h3 {
         width: 299px;
         height: 299px;
         overflow: hidden;
+        
 
     }
 
@@ -712,7 +920,7 @@ h3 {
 
 /* GRID Y RESPONSIVE SOLAPA CONTACTO*/
 
-.gridContacto {
+/* .gridContacto {
     display: grid;
     grid-template-areas:
         "headerContacto headerContacto"
@@ -729,18 +937,18 @@ h3 {
 
 .posicionFormulario {
     grid-area: posicionFormulario;
-}
+} */
 
-.fotoContacto {
+/* .fotoContacto {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: fotoContacto;
+    /* grid-area: fotoContacto; 
     background-color: #bfb8da;
-}
+} 
+*/
 
-
-@media screen and (max-width: 1050px) {
+/* @media screen and (max-width: 1050px) {
 
 
     .gridContacto {
@@ -760,9 +968,9 @@ h3 {
 
 
 
-}
+} */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
 
 
     .gridContacto {
@@ -796,12 +1004,12 @@ h3 {
 
         width: 299px;
     }
-}
+} */ 
 
 
 /* APLICAMOS GRID Y FULL RESPONSIVE A SOBRE MI */
 
-.gridSobreMi {
+/* .gridSobreMi {
 
     display: grid;
     grid-template-areas:
@@ -898,7 +1106,7 @@ h3 {
         width: 95%;
     }
 
-}
+} */
 
 
 
@@ -908,7 +1116,7 @@ h3 {
 
 
 
-.gridRedesSociales {
+/* .gridRedesSociales {
 
  display: grid;
  grid-template-areas: 
@@ -931,12 +1139,13 @@ h3 {
 
 }
 
+*/
 
 @media screen and (max-width:500px) {
 
 
 
-.gridRedesSociales {
+/* .gridRedesSociales {
 
 grid-template-areas: 
 "headerRedesSociales headerRedesSociales"
@@ -944,7 +1153,9 @@ grid-template-areas:
 "botoneraRedesSociales botoneraRedesSociales"
 "footerRedesSociales footerRedesSociales";
 
-}
+} */
+
+
 
 
 .mainRedesSociales {
@@ -952,6 +1163,10 @@ grid-template-areas:
 
     font-size: 3rem;
    
+}
+
+footer {
+    text-align: center;
 }
 
 }

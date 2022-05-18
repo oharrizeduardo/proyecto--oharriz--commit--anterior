@@ -8,6 +8,17 @@
 
     <title>Doctora Agustina Rodrigo</title>
 
+    <!-- METO BOOTSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+    <!-- METO FONTAWESOME -->
+
+    <script src="https://kit.fontawesome.com/5b8ec87382.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/Logo--medicina--solapa.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="../img/Logo--medicina--solapa.jpg" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/style.css">
@@ -29,7 +40,7 @@
 
     </header>
 
-    <picture class="botoneraRedesSociales">
+    <!-- <picture class="botoneraRedesSociales">
 
 
         <a class="icono" href="https://www.instagram.com/dra.agustinarodrigo/" target="_blank"><img
@@ -44,10 +55,72 @@
         <a class="icono" href="https://www.tiktok.com/@dra.agustinarodrigo" target="_blank"><img
                 src="../img/icono--tiktok.png" alt="Logo Tiktok"></a>
 
-    </picture>
+    </picture> -->
+
+    <div class="redesContainer">
+
+        <ul>
+
+            <li> <a href="https://www.instagram.com/dra.agustinarodrigo/" target="_blank" class="instagram"><i
+                        class="fab fa-instagram"></i></a></li>
+            <li> <a href="https://api.whatsapp.com/send?phone=5491164152149&text=Hola, Necesito mas informacion!"
+                    target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+            <li> <a href="https://www.linkedin.com/in/agustinarodrigo/" target="_blank" class="linkedin"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+            <li> <a href="https://www.tiktok.com/@dra.agustinarodrigo" target="_blank" class="tiktok"><i
+                        class="fab fa-tiktok"></i></a></li>
 
 
-    <nav class="menuNavegacion">
+        </ul>
+
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark mt-0 menuNavegacion">
+
+        <div class="container-fluid menuNavegacion ">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center align-items-center " id="navbarNavDropdown">
+
+                <ul class="navbar-nav justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="../pages/sobre--mi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tratamientos
+                        </a>
+                        <ul class="dropdown-menu colorFondoDropdown" aria-labelledby="navbarDropdownMenuLink">
+
+                            <li><a class="dropdown-item colorNav" href="../pages/tratamientos.html">Facial</a></li>
+                            <li><a class="dropdown-item colorNav" href="../pages/tratamientos.html">Corporal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="../pages/redes-sociales.html">Redes Sociales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active " href="../pages/contacto.html">Contacto</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- <nav class="menuNavegacion">
         <ul>
             <li><a href="../index.html">Inicio</a></li>
 
@@ -60,63 +133,9 @@
             <li><a href="contacto.html">Contacto</a></li>
 
         </ul>
-    </nav>
-
-
-
+    </nav> -->
 
     <!-- <section>
-
-            <form class="formularioDeContacto">
-
-               
-
-                    <h2 id="tituloContacto">Contacto</h2>
-
-                    <div>
-                        
-                        <input id="nombre" type="text" placeholder="Nombre">
-                    </div>
-
-                    <div>
-                  
-                        <input id="Apellido" type="text" placeholder="Apellido">
-                    </div>
-
-                    <div>
-                        
-                        <input id="Teléfono" type="number" placeholder="Teléfono">
-                    </div>
-                    <div>
-                        
-                        <input id="Correo Electrónico" type="email" placeholder="E-mail">
-                    </div>
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su comentario aquí"></textarea>
-                    </div>
-
-                    <div>
-
-                        <input id= "botonEnviar" type="submit" value="Enviar">
-
-                        
-                    </div>
-
-
-            
-
-            </form>
-
-
-
-
-
-        </section> -->
-
-
-
-
-     <main class="posicionformulario">
 
         <form class="formularioDeContacto">
 
@@ -143,59 +162,112 @@
                 <input id="Correo Electrónico" type="email" placeholder="E-mail">
             </div>
             <div>
-                <textarea name="" id="textoComentario" cols="30" rows="10"
-                    placeholder="Escriba su comentario aquí"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su comentario aquí"></textarea>
             </div>
 
             <div>
 
                 <input id="botonEnviar" type="submit" value="Enviar">
 
+            </div>
+
+        </form>
+    </section> -->
+
+
+
+
+
+
+    <main class="container-fluid posicionformulario">
+
+
+        <div class="row fluid">
+
+            <form class="col-lg-6 col-md-12 col-sm-12  formularioDeContacto ">
+
+
+
+                <h2 id="tituloContacto">Contacto</h2>
+
+                <div>
+
+                    <input id="nombre" type="text" placeholder="Nombre">
+                </div>
+
+                <div>
+
+                    <input id="Apellido" type="text" placeholder="Apellido">
+                </div>
+
+                <div>
+
+                    <input id="Teléfono" type="number" placeholder="Teléfono">
+                </div>
+                <div>
+
+                    <input id="Correo Electrónico" type="email" placeholder="E-mail">
+                </div>
+                <div>
+                    <textarea name="" id="textoComentario" cols="30" rows="10"
+                        placeholder="Escriba su comentario aquí"></textarea>
+                </div>
+
+                <div>
+
+                    <input id="botonEnviar" type="submit" value="Enviar">
+
+
+                </div>
+
+
+
+
+            </form>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 fotoContacto">
+
+                <img class="fotoSobreMi img-fluid" src="../img/foto--contacto.jpg" alt="Foto Doctora">
 
             </div>
 
-
-
-
-        </form>
-
+        </div>
 
     </main>
 
 
 
-    <section class="mapas">
+    <section class="container-fluid mapas ">
 
-        <section>
+        <div class="row justify-content-between mapaTamanio">
 
-            <h3>Argentina, Ciudad Autónoma de Buenos Aires</h3>
+            <section class="col-lg-6 col-md-12 col-sm-12">
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690.5044749196061!2d-58.40324319681259!3d-34.58869966368527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2de12fad9666e58f!2sDra.%20Agustina%20Rodrigo!5e0!3m2!1ses!2sar!4v1649881359969!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="dibujoMapa"></iframe>
+                <h3>Argentina, Ciudad Autónoma de Buenos Aires</h3>
 
-        </section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690.5044749196061!2d-58.40324319681259!3d-34.58869966368527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2de12fad9666e58f!2sDra.%20Agustina%20Rodrigo!5e0!3m2!1ses!2sar!4v1649881359969!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="dibujoMapa"></iframe>
 
-        <section>
+            </section>
 
-            <h3>España, Madrid</h3>
+            <section class="col-lg-6 col-md-12 col-sm-12">
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1655.986057563003!2d-3.684162326708023!3d40.428967056120676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1649882659866!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="dibujoMapa"></iframe>
+                <h3>España, Madrid</h3>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1655.986057563003!2d-3.684162326708023!3d40.428967056120676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1649882659866!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="dibujoMapa"></iframe>
 
 
-        </section>
+            </section>
+
+        </div>
 
     </section>
 
-    <div class="fotoContacto">
-
-        <img class="fotoSobreMi" src="../img/foto--contacto.jpg" alt="Foto Doctora">
-
-    </div>
 
     <footer>
 
@@ -203,6 +275,13 @@
 
 
     </footer>
+
+    <!-- Script del bundle de Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
 
 
 
