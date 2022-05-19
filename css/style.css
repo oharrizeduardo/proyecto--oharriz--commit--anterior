@@ -342,10 +342,26 @@ h3 {
 
 }
 
+.cajaFotoContacto {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fotoContacto {
+
+    width: 650px;
+    border-radius: 10px;
+    
+}
+
 
 
 
 /* SECCION TRATAMIENTOS */
+
+
 
 
 .listaTratamientos {
@@ -372,6 +388,11 @@ h3 {
     justify-content: space-evenly;
     flex-direction: column;
 }
+
+
+
+
+
 
 
 .listaTratamientosFacial p {
@@ -467,6 +488,97 @@ h3 {
     opacity: 0.9;
 
 }
+
+/* ACA HAGO NUEVO CODIGO DE TRATAMIENTOS */
+
+.contenedorTarjetas {
+
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #bfb8da;
+    
+
+}
+
+.caja {
+
+    height: auto;
+    width: 500px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    border: solid black 1px;
+
+
+}
+
+.caja:hover {
+
+    transform: translateY(-15px);
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+    
+} 
+
+.fotoTarjeta {
+
+    width: 100%;
+    height: auto;
+}
+
+
+.saberMas:hover{
+
+    transform: rotateX(360deg);
+
+}
+
+#saberMas {
+
+    text-align: center;
+    background-color:#562764;
+    color: white;
+    border-radius: 16px;
+
+}
+
+
+/* ACA CAMBIO TRATAMIENTOS FACIALES */
+
+
+
+.contenedorTarjetasFacial {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #bfb8da;
+
+}
+
+.cajaTratamientosFacial{
+
+    height: auto;
+    width: 500px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.25s;
+    border: solid black 1px;
+    background-color: white
+
+
+}
+
+
+
 
 
 
@@ -807,11 +919,8 @@ text-align: center;
 
     .fotoSobreMi {
 
-        width: 95%;
+        width: 100%
         margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding-top: 15px;
     }
 
@@ -828,16 +937,31 @@ text-align: center;
 
     .fotoSobreMi {
 
-        width: 95%;
+        width: 100%;
         margin: auto;
+        padding-top: 15px;
+    }
+
+    .cajaFotoContacto {
+
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 15px;
+    }
+    
+    .fotoContacto {
+    
+        width: 650px;
+        border-radius: 10px;
+        padding-top: 35px;
+        
     }
 
 
 }
+
+
+
 
 
 
