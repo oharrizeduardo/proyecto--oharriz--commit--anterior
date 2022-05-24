@@ -1,0 +1,28 @@
+.menuNavegacion {
+
+    background-color:$color-barra-nav;
+    font-family:$tipografia;
+    text-align: right;
+
+    .colorFondoDropdown {
+        background-color: $color-barra-nav;
+    
+    }
+
+    ul li a {
+
+    color: white;
+
+    &:hover {
+
+        background-color:indigo;
+    } 
+
+
+    }
+
+
+
+}
+
+

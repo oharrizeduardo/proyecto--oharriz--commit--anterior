@@ -1,0 +1,54 @@
+.mainIndex {
+
+    background-color:$color-main;
+
+    .primeraSeccion {
+
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-flow: column;
+
+        .cajaVideo {
+
+            width: 100%;
+            margin-top: 90px;
+            padding: 20px;
+
+            .videoLanding {
+
+                width: 100%;
+                border: 9px black;
+                margin: auto;
+                border-radius: 20px;
+            
+            }
+        
+        }
+
+        .fraseFoto {
+
+            text-align: center;
+            font-family:$tipografia;
+            font-size: 20px;
+            padding: 10px;
+        
+        }
+
+        #conoceMas {
+
+            border-style: none;
+            border-radius: 15px;
+            font-family:$tipografia;
+            background-color:$color-barra-nav;
+            padding: 10px;
+            margin-bottom: 5px;
+            color: white;
+        
+        }
+    
+    }
+
+
+}

@@ -1,0 +1,119 @@
+body {
+
+    header {
+
+        .fotoInicio {
+
+            padding-top: 20px;
+            padding-left: 45px;
+            background-color:$color-header;
+
+            #fotoInicio {
+
+                max-width: 95%;
+                max-height: 95%;
+                height: 90px;
+
+            }
+        
+
+
+        }
+
+        .redesContainer {
+
+            display: flex;
+            flex-direction: column;
+            align-items:flex-end;
+            justify-items: center;
+            background-color:$color-header;
+
+            ul {
+
+            
+                display: flex;
+                align-items:flex-end;
+                justify-items: flex-end;
+                background-color:$color-header;
+                list-style: none;
+
+
+                &:hover a {
+
+                    filter: blur(2px);
+                }
+
+
+                li {
+
+                    margin: 0 5px;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+
+                    & .instagram:hover {
+
+                        background-color: $instagram;
+                        filter: none;
+                    
+                    }
+
+                    & .whatsapp:hover {
+
+                        background-color: $whatsapp;
+                        filter: none;
+                    
+                    }
+                    
+                    & .tiktok:hover {
+
+                        background-color: $tiktok;
+                        filter: none;
+                    
+                    }
+                    
+                    & .linkedin:hover {
+                        background-color: $linkedin;
+                        filter: none;
+
+                    }
+                    
+
+                    a {
+
+                        display: block;
+                        padding: 0 10px;
+                        background:$color-barra-redes-sociales;
+                        color: #fff;
+                        line-height: 50px;
+                        font-size: 18px;
+                        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+                        transition: .2s;
+
+                        &:hover {
+
+                            transform: translateY(-6px) ;
+                            transform: scale(1.05) ;
+                            box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+                        
+                        }
+                         
+                        
+                        
+                    }
+                        
+                 }
+                 
+
+
+
+
+            }
+
+
+        
+        }
+
+    }
+
+}

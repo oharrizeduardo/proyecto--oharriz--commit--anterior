@@ -1,0 +1,52 @@
+.mainSobreMi {
+
+    background-color:$color-main;
+
+    .seccionSobreMi {
+
+        .textoSobreMi {
+
+            font-family:$tipografia;
+
+        }
+
+        .fotoSobreMi {
+
+            height: auto;
+            width: 500px;
+            border-radius: 25px;
+            margin-right: 20px;
+            margin-left: 20px;
+            
+        
+        }
+
+
+    }
+
+    .segundaSeccionSobreMi {
+
+        .fotoSobreMi2 {
+
+            height: auto;
+            width: 500px;
+            border-radius: 25px;
+            margin-right: 20px;
+            margin-left: 20px;
+
+
+        }
+
+        .textoSobreMi {
+
+            font-family:$tipografia;
+
+        }
+
+
+
+    }
+
+
+}
+

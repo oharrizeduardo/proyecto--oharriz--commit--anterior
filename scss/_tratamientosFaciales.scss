@@ -1,0 +1,97 @@
+.contenedorTarjetasFacial {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color:$color-main;
+
+
+    .cajaTratamientosFacial {
+
+        height: auto;
+        width: 500px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+        margin: 40px;
+        border-radius: 8px;
+        text-align: center;
+        transition: all 0.25s;
+        border: solid black 1px;
+        background-color: white;
+
+      
+
+        .fotoTarjeta {
+
+            width: 100%;
+            height: auto;
+        }
+
+
+        .displayDeAdentro {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .iconosAdentro {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items:center;
+                padding: 20px;
+
+                .iconos {
+
+                    font-size: 35px;
+                }
+            
+            }
+        
+        }
+        
+
+
+
+    
+    }
+
+    
+    
+
+
+
+}
+
+
+.botoneraTratamientos {
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:$color-main;
+
+    .botonTratamientos {
+
+        border-radius: 25px;
+        text-align: center;
+        background-color: #562764;
+        color: white;
+        transition: all 0.25s;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-family:$tipografia;
+
+
+        &:hover {
+
+            transform: translateY(-15px);
+            box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);   
+            
+            
+        }
+    }
+
+}
+        

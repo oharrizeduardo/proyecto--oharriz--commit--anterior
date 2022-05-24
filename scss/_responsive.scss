@@ -1,0 +1,72 @@
+@media screen and (max-width:800px) {
+
+    .redesContainer {
+
+        padding-top: 20px;
+    }
+
+    .cajaFotoContacto {
+
+    padding-top: 50px;
+
+    }
+
+
+
+}
+
+
+@media screen and (max-width:550px) {
+
+    #fotoLogo {
+
+        width: 95%;
+
+    }
+
+    footer {
+
+        text-align: center;
+    }
+
+    .botoneraTratamientos {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .botonTratamientos {
+
+    margin-top: 15px;
+
+    }
+
+    .faq p {
+
+        font-family:$tipografia;
+        font-size: 3rem;
+        text-align: center;
+        
+    }
+
+    .cajaBoton {
+
+        margin-top: 30px;
+    }
+
+    .formularioDeContacto {
+
+        width: 300px;
+    }
+
+
+
+    .dibujoMapa {
+
+        width: 95%;
+    }
+
+}
+
+
