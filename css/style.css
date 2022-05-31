@@ -4,6 +4,43 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*MAPS*/
+.instagram {
+  color: #e4405f; }
+
+.whatsapp {
+  color: #00bb2b; }
+
+.linkedin {
+  color: #0077b5; }
+
+.tiktok {
+  color: black; }
+
+/*MAP-GET -- SOLO HAGO LA DE INSTAGRAM DE EJEMPLO -- */
+.instagram:hover {
+  background-color: #e4405f; }
+
+/* EXTEND  -- UTILICE COMO EJEMPLO LA CAJA DE FACIALES Y LA EXTENDI A LA CAJA DE LA PARTE DE CORPORALES -- */
+.cajaTratamientosFacial, .cajaTratamientosCorporal {
+  height: auto;
+  width: 500px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 40px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.25s;
+  border: solid black 1px;
+  background-color: white; }
+
+.cajaTratamientosCorporal {
+  font-size: 25px; }
+
+/*MIXIN CON PARAMETROS*/
+.fotoTarjeta {
+  width: 100%;
+  height: auto; }
+
 @media screen and (max-width: 800px) {
   .redesContainer {
     padding-top: 20px; }
@@ -60,7 +97,6 @@ body header .redesContainer {
       height: 50px;
       text-align: center; }
       body header .redesContainer ul li .instagram:hover {
-        background-color: #e4405f;
         filter: none; }
       body header .redesContainer ul li .whatsapp:hover {
         background-color: #00bb2b;
@@ -185,7 +221,7 @@ body header .redesContainer {
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #bfb8da; }
-  .contenedorTarjetasFacial .cajaTratamientosFacial {
+  .contenedorTarjetasFacial .cajaTratamientosFacial, .contenedorTarjetasFacial .cajaTratamientosCorporal {
     height: auto;
     width: 500px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
@@ -195,21 +231,18 @@ body header .redesContainer {
     transition: all 0.25s;
     border: solid black 1px;
     background-color: white; }
-    .contenedorTarjetasFacial .cajaTratamientosFacial .fotoTarjeta {
-      width: 100%;
-      height: auto; }
-    .contenedorTarjetasFacial .cajaTratamientosFacial .displayDeAdentro {
+    .contenedorTarjetasFacial .cajaTratamientosFacial .displayDeAdentro, .contenedorTarjetasFacial .cajaTratamientosCorporal .displayDeAdentro {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column; }
-      .contenedorTarjetasFacial .cajaTratamientosFacial .displayDeAdentro .iconosAdentro {
+      .contenedorTarjetasFacial .cajaTratamientosFacial .displayDeAdentro .iconosAdentro, .contenedorTarjetasFacial .cajaTratamientosCorporal .displayDeAdentro .iconosAdentro {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         padding: 20px; }
-        .contenedorTarjetasFacial .cajaTratamientosFacial .displayDeAdentro .iconosAdentro .iconos {
+        .contenedorTarjetasFacial .cajaTratamientosFacial .displayDeAdentro .iconosAdentro .iconos, .contenedorTarjetasFacial .cajaTratamientosCorporal .displayDeAdentro .iconosAdentro .iconos {
           font-size: 35px; }
 
 .botoneraTratamientos {

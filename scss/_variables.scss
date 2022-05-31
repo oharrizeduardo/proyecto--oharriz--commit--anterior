@@ -30,4 +30,60 @@ $tiktok:black;
 $tipografia: 'Ovo', serif;
 
 
+/*MAPS*/
+
+$barraRedes:(instagram:$instagram, whatsapp:$whatsapp, linkedin:$linkedin, tiktok:$tiktok);
+
+@each $redSocial, $colorRedSocial in $barraRedes {
+    .#{$redSocial} {
+        color: $colorRedSocial;
+    }
+}
+
+/*MAP-GET -- SOLO HAGO LA DE INSTAGRAM DE EJEMPLO -- */
+
+$estilo:(color:$instagram);
+
+.instagram:hover {
+    background-color: map-get($estilo,color);
+ 
+}
+
+/* EXTEND  -- UTILICE COMO EJEMPLO LA CAJA DE FACIALES Y LA EXTENDI A LA CAJA DE LA PARTE DE CORPORALES -- */
+
+.cajaTratamientosFacial {
+    height: auto;
+    width: 500px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.25s;
+    border: solid black 1px;
+    background-color: white;
+}
+
+.cajaTratamientosCorporal {
+    @extend .cajaTratamientosFacial;
+    font-size: 25px;
+
+    
+}
+
+
+/*MIXIN CON PARAMETROS*/
+
+@mixin parametrosFotoTarjeta ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+
+.fotoTarjeta {
+    @include parametrosFotoTarjeta (100%, auto);
+}
+
+
+
+
 
