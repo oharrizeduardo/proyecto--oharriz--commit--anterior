@@ -10,6 +10,19 @@
         align-items: center;
         flex-flow: column;
 
+        .carrusel {
+
+            width: 95%;
+            border-radius: 20px;
+            padding-top: 30px;
+
+            .fotoSlide {
+
+                border-radius: 25px;
+            }
+
+        }
+
         .cajaVideo {
 
             width: 100%;

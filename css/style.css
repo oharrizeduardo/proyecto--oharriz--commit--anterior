@@ -104,6 +104,12 @@ body header .redesContainer {
     justify-content: flex-end;
     align-items: center;
     flex-flow: column; }
+    .mainIndex .primeraSeccion .carrusel {
+      width: 95%;
+      border-radius: 20px;
+      padding-top: 30px; }
+      .mainIndex .primeraSeccion .carrusel .fotoSlide {
+        border-radius: 25px; }
     .mainIndex .primeraSeccion .cajaVideo {
       width: 100%;
       margin-top: 90px;
