@@ -4,16 +4,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-@media screen and (max-width: 1260px) {
-  .mapaTamanio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .mapaTamanio .tituloMapa {
-      width: 100%; }
-    .mapaTamanio .dibujoMapa {
-      margin: auto; } }
-
 @media screen and (max-width: 1080px) {
   .redesContainer {
     padding-top: 20px; }
@@ -24,8 +14,6 @@
     width: 100%;
     margin: auto; }
   .seccionSobreMi .fotoSobreMi {
-    display: none; }
-  .segundaSeccionSobreMi #fotoSobreMiResponsive {
     display: none; } }
 
 @media screen and (max-width: 660px) {
@@ -42,18 +30,13 @@
     flex-direction: column; }
   .botonTratamientos {
     margin-top: 15px; }
-  .faq p {
-    font-family: "Ovo", serif;
-    font-size: 3rem;
-    text-align: center; }
   .cajaBoton {
     margin-top: 30px; }
-  .dibujoMapa {
-    width: 85%; }
-  .segundaSeccionSobreMi .fotoSobreMi2 {
-    padding-top: 10px; }
-  .segundaSeccionSobreMi #fotoSobreMiResponsive {
-    display: none; } }
+  .segundaSeccionSobreMi {
+    align-items: center; }
+    .segundaSeccionSobreMi .fotoSobreMi2 {
+      padding-top: 10px;
+      margin: auto; } }
 
 body header .fotoInicio {
   padding-top: 20px;
@@ -358,18 +341,23 @@ body header .redesContainer {
 
 .mapas {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   /* grid-area: mapas; */
   background-color: #bfb8da;
   padding-top: 20px; }
-  .mapas .dibujoMapa {
-    border-radius: 40px; }
-  .mapas h3 {
-    color: #fff;
-    text-decoration: underline; }
+  .mapas .mapaTamanio {
+    width: 100%; }
+    .mapas .mapaTamanio .dibujoMapa {
+      border-radius: 40px;
+      width: 100%; }
+    .mapas .mapaTamanio .tituloMapa {
+      color: #fff;
+      text-decoration: underline;
+      text-align: center;
+      width: 100%; }
 
 footer {
   display: flex;

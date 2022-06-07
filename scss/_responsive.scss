@@ -1,32 +1,3 @@
-@media screen and (max-width:1260px) {
-
-
-    .mapaTamanio{
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        .tituloMapa {
-
-           width: 100%;
-        }
-
-        .dibujoMapa {
-
-            margin: auto;
-
-
-        }
-
-
-    }
-
-
-    
-}
-
-
 
 
 
@@ -53,18 +24,14 @@
     .seccionSobreMi {
 
         .fotoSobreMi {
-
-            display:none;
+        display: none;
+            
         }
 
 
     }
 
-    .segundaSeccionSobreMi {
-        #fotoSobreMiResponsive {
-            display: none;
-        }
-    }
+
 
 
 
@@ -115,13 +82,7 @@
 
     }
 
-    .faq p {
 
-        font-family:$tipografia;
-        font-size: 3rem;
-        text-align: center;
-        
-    }
 
     .cajaBoton {
 
@@ -130,21 +91,21 @@
 
 
 
-    .dibujoMapa {
 
-        width: 85%;
-    }
 
 
     .segundaSeccionSobreMi {
 
+        align-items: center;
+
         .fotoSobreMi2 {
 
             padding-top: 10px;
+            margin: auto;
+           
         }
-        #fotoSobreMiResponsive {
-            display: none;
-        }
+
+  
     }
 
 }

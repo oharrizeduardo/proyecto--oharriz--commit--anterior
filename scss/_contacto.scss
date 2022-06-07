@@ -138,24 +138,38 @@
 .mapas {
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     /* grid-area: mapas; */
     background-color: #bfb8da;
     padding-top: 20px;
 
-    .dibujoMapa {
+    .mapaTamanio {
+
+        width: 100%;
+        
+    
+
+      .dibujoMapa {
 
         border-radius: 40px;
-    }
+        width: 100%;
+        }
 
-    h3 {
+        .tituloMapa {
+
         color: #fff;
         text-decoration: underline;
+        text-align: center;
+        width: 100%;
+
+        }
+
     }
-    
-    
+
+
+
 
 }
