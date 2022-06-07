@@ -4,13 +4,35 @@
   padding: 0;
   box-sizing: border-box; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1260px) {
+  .mapaTamanio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .mapaTamanio .tituloMapa {
+      width: 100%; }
+    .mapaTamanio .dibujoMapa {
+      margin: auto; } }
+
+@media screen and (max-width: 1080px) {
   .redesContainer {
     padding-top: 20px; }
+  .cajaVideoContacto {
+    width: 100%; }
   .cajaFotoContacto {
-    padding-top: 50px; } }
+    padding-top: 50px;
+    width: 100%;
+    margin: auto; }
+  .seccionSobreMi .fotoSobreMi {
+    display: none; }
+  .segundaSeccionSobreMi #fotoSobreMiResponsive {
+    display: none; } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 660px) {
+  .cajaFotoContacto {
+    display: none; }
+  .cajaVideoContacto {
+    display: none; }
   #fotoLogo {
     width: 95%; }
   footer {
@@ -26,10 +48,12 @@
     text-align: center; }
   .cajaBoton {
     margin-top: 30px; }
-  .formularioDeContacto {
-    width: 300px; }
   .dibujoMapa {
-    width: 95%; } }
+    width: 85%; }
+  .segundaSeccionSobreMi .fotoSobreMi2 {
+    padding-top: 10px; }
+  .segundaSeccionSobreMi #fotoSobreMiResponsive {
+    display: none; } }
 
 body header .fotoInicio {
   padding-top: 20px;
@@ -145,12 +169,10 @@ body header .redesContainer {
     margin-left: 20px; }
   .mainSobreMi .segundaSeccionSobreMi .fotoSobreMi2 {
     height: auto;
-    width: 500px;
+    width: 320px;
     border-radius: 25px;
     margin-right: 20px;
     margin-left: 20px; }
-  .mainSobreMi .segundaSeccionSobreMi .textoSobreMi {
-    font-family: "Ovo", serif; }
 
 .contenedorTarjetas {
   display: flex;
@@ -238,10 +260,25 @@ body header .redesContainer {
 
 .faq {
   text-align: center;
-  font-size: 6rem;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  background-color: #bfb8da; }
+  background-color: #bfb8da;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+  .faq .tituloPreguntasFrecuentes {
+    padding-top: 40px;
+    text-align: center;
+    font-family: "Ovo", serif;
+    color: black; }
+  .faq .cajaPreguntasFrecuentes {
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 16px;
+    color: black;
+    background-color: transparent; }
+    .faq .cajaPreguntasFrecuentes .accordion-item {
+      background-color: #eceaf4; }
 
 .posicionformulario {
   padding-top: 40px;

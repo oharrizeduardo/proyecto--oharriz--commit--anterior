@@ -1,22 +1,95 @@
-@media screen and (max-width:800px) {
+@media screen and (max-width:1260px) {
+
+
+    .mapaTamanio{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .tituloMapa {
+
+           width: 100%;
+        }
+
+        .dibujoMapa {
+
+            margin: auto;
+
+
+        }
+
+
+    }
+
+
+    
+}
+
+
+
+
+
+@media screen and (max-width:1080px) {
 
     .redesContainer {
 
         padding-top: 20px;
     }
 
+    .cajaVideoContacto {
+
+        width: 100%;
+    }
+
     .cajaFotoContacto {
 
     padding-top: 50px;
+    width: 100%;
+    margin: auto;
 
     }
+
+    .seccionSobreMi {
+
+        .fotoSobreMi {
+
+            display:none;
+        }
+
+
+    }
+
+    .segundaSeccionSobreMi {
+        #fotoSobreMiResponsive {
+            display: none;
+        }
+    }
+
+
 
 
 
 }
 
 
-@media screen and (max-width:550px) {
+
+
+
+@media screen and (max-width:660px) {
+
+    .cajaFotoContacto {
+
+        display: none;
+    }
+
+    .cajaVideoContacto{
+
+        display: none;
+    }
+
+
+
 
     #fotoLogo {
 
@@ -55,16 +128,23 @@
         margin-top: 30px;
     }
 
-    .formularioDeContacto {
-
-        width: 300px;
-    }
-
 
 
     .dibujoMapa {
 
-        width: 95%;
+        width: 85%;
+    }
+
+
+    .segundaSeccionSobreMi {
+
+        .fotoSobreMi2 {
+
+            padding-top: 10px;
+        }
+        #fotoSobreMiResponsive {
+            display: none;
+        }
     }
 
 }
