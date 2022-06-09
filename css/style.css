@@ -138,14 +138,15 @@ body header .redesContainer {
       background-color: #562764;
       padding: 10px;
       margin-bottom: 5px;
-      color: white; }
+      color: white;
+      margin-bottom: 15px; }
 
 .mainSobreMi {
   background-color: #bfb8da; }
   .mainSobreMi .seccionSobreMi .textoSobreMi {
     font-family: "Ovo", serif; }
   .mainSobreMi .seccionSobreMi .fotoSobreMi {
-    height: auto;
+    height: 350px;
     width: 500px;
     border-radius: 25px;
     margin-right: 20px;
